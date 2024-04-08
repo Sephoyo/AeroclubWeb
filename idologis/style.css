@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.admin{
+  position: absolute;
+  display:  inline-block;
+  margin: 15px;
+  padding: 10px 10px;
+  left: 900px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: white;
+  background: transparent;
+  cursor: pointer;
+  -webkit-transition: ease-out 0.5s;
+  transition: ease-out 0.5s;
+  border: 2px solid yellowgreen;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 0 0 yellow;
+          box-shadow: inset 0 0 0 0 yellow;
+}
+
+.admin:hover{
+  color: white;
+  -webkit-box-shadow: inset 0 -100px 0 0 yellowgreen;
+          box-shadow: inset 0 -100px 0 0 yellowgreen;
+}
+
+.admin:active{
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url(img/maisonback.jpg);
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+    cursor:pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content:'';
+    height:3px;
+    width: 0;
+    background: #009688;
+    position:absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.admin{
+    position:absolute;
+}
+.content{
+    width: 100%;
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color:white;
+}
+
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+    color: rgb(181, 201, 174);
+}
+
+.content h2{
+    font-size: 50px;
+    margin-top: 80px;
+    color: rgb(190, 206, 231);
+}
+
+.content h3{
+    color: rgb(190, 206, 231);
+}
+
+.content p{
+    margin:20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    color: rgb(63, 161, 116);
+}
+
+.content p .or{
+    margin:20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    color: gold;
+}
+
+.content li .or{
+    color: gold;
+}
+
+.content .ventes{
+    width: 20%;
+    height: 20%;
+}
+table th{
+    background-color: rgb(39, 87, 27);
+    text-align: center;
+    border: 3px solid black;
+}
+
+table td{
+    background-color: rgb(181, 201, 174);
+    text-align: center;
+    border: 3px solid black;
+}
+table{
+    margin: 20px auto;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 94%;;
+    align-content: center;
+    color: white;
+}
+
+
+.btn {
+  transform: translate(25%, 0%);
+  font-size: 15px;
+  font-weight: 600;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  color: whitesmoke;
+}
+
+.btn:hover .background {
+  height: inherit;
+  width: 120%;
+  top: 50%;
+}
+
+.btn .background {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 3px;
+  width: 100%;
+  background-color: #99ccff;
+  z-index: -1;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.content p .adtxt{
+    color: #6699ff;
+}
+
+section .bien{
+    align-content: center;
+    color:white;
+    width: 100%;
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color:white;
+}
+
+
+.cadre_scroll{
+  overflow:scroll;
+  max-height: 38vh;
+  overflow-x:hidden;
+  display: inline-block;
+  scrollbar-width: none;
+}
+
+.cadre_scroll td tr {
+    background:none;
+    border: 1px black;
+}
+
+.imgadb{
+    height:100px;
+    widht:100px;
+    background: none;
+    min-height: 100px;
+    min-width: 150px;
+    max-height: 100px;
+    max-width: 150px;
+}
+
+.formasm {
+  position:center;
+  top:30%;
+  left:50%;
+  width:300px;
+  height:200px;
+  margin-left:800px;
+  margin-top:-50px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  border-radius: 10px;
+  padding: 20px 40px 500px;
+  background-color: rgba(245, 245, 245, 0.068);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.192);
+  transition: .2s linear;
+}
+
+.formasm button {
+  align-self: flex-end;
+}
+
+
+.label {
+  font-size: 14px;
+  margin-bottom: -10.6px;
+}
+
+.input {
+  height: 25px;
+  width: 100%;
+  border: 0.5px solid white;
+  background-color: transparent;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  transition: .2s linear;
+  position: relative;
+}
+
+.input:focus {
+  outline: none;
+  background-color: rgba(173, 173, 173, 0.233);
+  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.137);
+}
+
+
+.input2 {
+  height: 25px;
+  width: 100%;
+  border: 0.5px solid white;
+  background-color: transparent;
+  color: white;
+  padding: 27px;
+  border-radius: 5px;
+  transition: .2s linear;
+  position: static;
+}
+
+.input2:focus {
+  outline: none;
+  background-color: rgba(173, 173, 173, 0.233);
+  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.137);
+}
+
+.scroll {
+  background-color: none;
+}
+
+
+.formas {
+  position:center;
+  top:30%;
+  left:50%;
+  width:300px; /* A toi de donner la bonne largeur */
+  height:200px; /* A toi de donner la bonne hauteur */
+  margin-left:800px; /* -largeur/2 */
+  margin-top:-80px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  border-radius: 10px;
+  padding: 20px 40px 40px;
+  background-color: rgba(245, 245, 245, 0.068);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.192);
+  transition: .2s linear;
+}
+
+.formasm button {
+  align-self: flex-end;
+}
+
+.register-club-form{
+  visibility: hidden;
+}
+.register-user-form{
+  visibility: hidden;
+}
+
+/* Style pour les boutons de suppression */
+button.delete-button {
+    background-color: #ff3333; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    border: none; /* Suppression de la bordure */
+    padding: 8px 16px; /* Espacement intérieur */
+    cursor: pointer; /* Curseur pointer */
+    border-radius: 4px; /* Arrondi des coins */
+}
+
+/* Style pour les boutons de suppression au survol */
+button.delete-button:hover {
+    background-color: #ff6666; /* Couleur de fond au survol */
+}
